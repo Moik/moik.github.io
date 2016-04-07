@@ -5,7 +5,7 @@ $(document).ready(function() {
 	});
 
 	$(".count-wrap").countdown({
-		until: new Date(2016, 8-1, 10),
+		until: new Date(2016, 12-1, 1),
 		format: 'dHM'
 	});
 });
