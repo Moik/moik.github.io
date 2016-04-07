@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Houschka Medium';
+    src: url('../fonts/HouschkaMedium.woff') format('woff'),
+         url('../fonts/HouschkaMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Houschka Bold';
+    src: url('../fonts/HouschkaBold.woff') format('woff'),
+         url('../fonts/HouschkaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+	font: 14px "Houschka Medium", sans-serif;
+	background-color: #b9d6ef;
+	/*overflow: hidden;*/
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.sky {
+	min-height: 464px;
+	padding-top: 100px;
+	/*background-color: #b9d6ef;*/
+	background: #b9d6ef url("../img/clouds.png") 50% -175px repeat-x;
+}
+
+.sky h1 {
+	color: #fefefe;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 1;
+	text-shadow: 2px 3.5px 0 rgba(0, 0, 0, 0.17);
+	text-transform: uppercase;
+}
+
+.sky p {
+	margin: 11px 0 18px;
+	color: #266b97;
+	text-transform: uppercase;
+}
+
+.sky input[type="email"] {
+	width: 240px;
+	height: 37px;
+	padding: 0 10px;
+	margin-right: 8px;
+	color: grey;
+	background-color: #fff;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 white, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.sky input[type="text"]::-webkit-input-placeholder {
+    color: grey;
+    font: 12px "Arial", sans-serif;
+}
+.sky input[type="text"]::-moz-placeholder {
+    color: grey;
+    font: 12px "Arial", sans-serif;
+}
+.sky input[type="text"]:-ms-input-placeholder {
+    color: grey;
+    font: 12px "Arial", sans-serif;
+}
+
+.sky input[type="submit"] {
+	width: 96px;
+	height: 36px;
+	margin-bottom: 210px;
+	color: #fff;
+	line-height: 36px;
+	background-color: #fab937;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.09) 20%, rgba(255, 255, 255, 0.09) 100%);
+	border: 1px solid #e68e16;
+	border-radius: 2px;
+	cursor: pointer;
+	text-shadow: 0 1px 1px rgba(29, 26, 22, 0.2);
+	text-transform: uppercase;
+}
+
+.sky input[type="submit"]:hover {
+	background-color: #e9a826;
+}
+
+.horizon {
+	position: relative;
+}
+
+.horizon-white {
+	height: 4px;
+	background-color: #ddecfa;
+}
+
+.horizon-blue {
+	height: 9px;
+	background-color: #327dad;
+}
+
+.iceberg {
+	position: absolute;
+	bottom: -292px;
+	left: calc(50% - 190px);
+	width: 354px;
+	height: 490px;
+	background: url("../img/ice.png") no-repeat;
+}
+
+.sea {
+	min-height: 315px;
+	background-color: #266b97;
+}
+
+.count-wrap {
+	position: relative;
+	top: 53px;
+	z-index: 10;
+	text-align: center;
+}
+
+.countdown-section {
+	display: inline-block;
+	margin: 0 40px 10px 0;
+	text-align: center;
+}
+
+.countdown-section:last-child {
+	margin-right: 0;
+}
+
+.countdown-amount {
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 5px;
+	color: #266b97;
+	font-size: 24px;
+	line-height: 70px;
+	background-color: #b9d6ef;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.countdown-period {
+	color: #f3f3f3;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width : 350px) {
+	.sky input[type="email"] {
+		margin-right: 0;
+	}
+
+	.sky input[type="submit"] {
+		margin-top: 15px;
+	}
+
+	.iceberg {
+		left: calc(50% - 195px);
+	}
+}
