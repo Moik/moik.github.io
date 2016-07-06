@@ -2,33 +2,639 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Countdown</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Turik Andrey</title>
+	<link rel="stylesheet" href="css/main.min.css">	
 </head>
-<body>
-	<div class="wrapper">
-		<div class="sky">
-			<h1>Winter is Coming</h1>
-			<p>Subscribe To Get Notified On Updates.</p>
-			<form action="#">
-				<input type="email" placeholder="Type your e-mail address">
-				<input type="submit" value="Subscribe">
-			</form>
-		</div>
-		<div class="horizon">
-			<div class="horizon-white"></div>
-			<div class="horizon-blue"></div>
-			<div class="iceberg"></div>
-		</div>
-		<div class="sea">
-			<div class="count-wrap"></div>
+<body data-spy="scroll" data-target="#side-menu">
+
+	<div class="loader" id="page-loader">
+		<div class="loading-wrapper">
+			<div class="tp-loader spinner"></div>
+			<div class="side-menu-name">
+				<strong>TAG</strong>
+			</div>
+			<p class="side-menu-job">Web Developer</p>
+
 		</div>
 	</div>
 
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+
+	<div class="side-menu-open">
+
+		<a href="#" class="btn btn-default side-menu-button"><i class="fa fa-bars"></i><span class="hidden-sm hidden-xs"> MENU</span></a>
+
+	</div>
+
+	<div class="side-menu">
+
+		<span id="side-menu-close"><i class="fa fa-times"></i></span>
+
+		<div class="side-menu-name">
+			<strong>TAG</strong>
+		</div>
+		<p class="side-menu-job">Web Developer</p>
+
+		<nav id="side-menu" class="side-menu-este">
+			<ul class="nav side-menu-nav">
+				<li><a href="#intro"><i class="fa fa-angle-right"></i> Intro</a></li>
+				<li><a href="#education"><i class="fa fa-angle-right"></i> Education</a></li>
+				<li><a href="#work-experience"><i class="fa fa-angle-right"></i> Work Experience</a></li>
+				<li><a href="#skills"><i class="fa fa-angle-right"></i> Skills</a></li>
+				<li><a href="#interests"><i class="fa fa-angle-right"></i> Interests</a></li>
+				<li><a href="#portfolio"><i class="fa fa-angle-right"></i> Portfolio</a></li>
+				<li><a href="#contact"><i class="fa fa-angle-right"></i> Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="side-menu-buttons">
+			<a href="files/resume.pdf" class="btn btn-side-menu" target="_blank"><i class="fa fa-download"></i> Download my resume</a>
+			<a href="#message-form" class="btn btn-side-menu popup"><i class="fa fa-envelope-o"></i> Send me a message</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="content-wrap animated">
+			<header id="intro">
+				<div class="row">
+					<div class="clearfix col-md-12 top-colors">
+						<div class="top-color"></div>
+						<div class="top-color"></div>
+						<div class="top-color"></div>
+						<div class="top-color"></div>
+					</div>
+					<div class="col-md-12">
+						<div class="header-buttons">
+							<a href="files/resume.pdf" target="_blank" class="btn btn-default btn-top">
+								<i class="fa fa-download"></i>
+								<span class="btn-text-hide">Download My Resume</span>
+							</a>
+							<a href="#message-form" class="btn btn-default btn-top popup">
+								<i class="fa fa-envelope-o"></i>
+								<span class="btn-text-hide">Send Me A Message</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="intro-info">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="photo-wrap">
+											<div class="photo">
+												<img src="img/photo.jpg" alt="It's me">
+											</div>
+
+										</div>
+										<div class="timeline-fix hidden-lg hidden-sm hidden-xs"></div>
+									</div>
+									<div class="col-md-7">
+										<h1>Hi, I'm <strong>Turik Andrey!</strong></h1>
+										<h2>Web Developer</h2>
+										<p>Turpis, sit amet iaculis dui consectetur at. Cras sagittis molestie orci. Suspendisse ut laoreet mi. Phasellus eu tortor vehicula, blandit enim eu, auctor massa. Nulla ultricies tortor dolor, sit amet suscipit enim condimentum id. Etiam eget iaculis tellus. Varius sit amet.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="timeline-wrap">
+
+				<div class="timeline-bg">
+
+					<section id="profile">
+
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Profile</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Full Name</h3>
+								<p>Turik Andrey Grigorievich</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Born</h3>
+								<p>10 Aug 1985 - Kharkiv, Ukraine</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Email</h3>
+								<p>turangr@gmail.com</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Find Me On</h3>
+								<p>
+									<a href="https://www.facebook.com/andrey.turik.3" class="btn btn-default links" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="https://plus.google.com/u/0/113373247341260003743" class="btn btn-default links" target="_blank">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<a href="https://ua.linkedin.com/in/turangr" class="btn btn-default links" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+									<a href="https://github.com/Moik" class="btn btn-default links" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+					</section>
+
+					<section id="education">
+						
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Education</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-education hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Web Development</h3>
+								<h4>
+									<i class="fa fa-university"></i>
+									Coursera - <span class="grad-date">Graduation Jul 2016</span>
+								</h4>
+								<p class="description">HTML, CSS, and Javascript for Web Developers</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-education hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Web Development</h3>
+								<h4>
+									<i class="fa fa-university"></i>
+									Prometheus - <span class="grad-date">Graduation Jan 2016</span>
+								</h4>
+								<p class="description">Basics of Web UI Development</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-education hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Web Development</h3>
+								<h4>
+									<i class="fa fa-university"></i>
+									Codeacademy - <span class="grad-date">Graduation 2015</span>
+								</h4>
+								<p class="description">After finishing of the course "HTML &amp; CSS" I received basic knowledge in web development</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-education hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Electrical Engineering</h3>
+								<h4>
+									<i class="fa fa-university"></i>
+									NTU "KhPI" - <span class="grad-date">Graduation Feb 2008</span>
+								</h4>
+								<p class="description">National Technical University «Kharkiv Polytechnic Institute» is my Alma Mater in which I became a specialist in the field of "Technology and electro physics of the high-tension ignition" after almost six years of education.</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+					</section>
+
+					<section id="work-experience">
+						
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Work Experience</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-work hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>"UKRATOMENERGOPROEKT" Ltd.</h3>
+								<h4>
+									<i class="fa fa-flag"></i>
+									Electrical Engineer - <span class="grad-date">Aug 2014 - Current</span>
+								</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-work hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>SE “UkrRTC “ENERGOSTAL”</h3>
+								<h4>
+									<i class="fa fa-flag"></i>
+									Electrical Engineer - <span class="grad-date">May 2008 - Mar 2014</span>
+								</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+					</section>
+
+					<section id="skills">
+						
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Skills</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Code Skills</h3>
+								<ul class="skills-list">
+									<li><span>HTML / CSS / SASS</span></li>
+									<li><span>JavaScript / jQuery</span></li>
+									<li><span>Java <span>(basic)</span></span></li>
+								</ul>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Technologies / Frameworks / Tools</h3>
+								<ul class="skills-list">
+									<li><span>Responsive Design with CSS</span></li>
+									<li><span>Bootstrap</span></li>
+									<li><span>Adobe Photoshop, Gulp, Bower</span></li>
+								</ul>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Abilities</h3>
+								<ul class="skills-list">
+									<li><span>Analytical mind</span></li>
+									<li><span>Fast Learner</span></li>
+									<li><span>Punctual</span></li>
+								</ul>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+					</section>
+
+					<section id="interests">
+						
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Interests</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Football</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti nihil accusantium molestiae, minima tempore unde eum totam, quaerat nostrum voluptates voluptas inventore facere, sit impedit necessitatibus deserunt vero. Delectus.</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Books</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti nihil accusantium molestiae, minima tempore unde eum totam, quaerat nostrum voluptates voluptas inventore facere, sit impedit necessitatibus deserunt vero. Delectus.</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Movies</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti nihil accusantium molestiae, minima tempore unde eum totam, quaerat nostrum voluptates voluptas inventore facere, sit impedit necessitatibus deserunt vero. Delectus.</p>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+					</section>
+
+					<section id="portfolio">
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Portfolio</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Some Works</h3>
+								<ul class="portfolio-items">
+									<li class="portfolio-item">
+										<div class="details">
+											<a href="https://moik.github.io/alepro/" target="_blank">
+												<i class="fa fa-search"></i>
+												<strong>Александр Прокопский</strong>
+												<span>CV Training Project</span>
+											</a>
+										</div>
+										<div class="thumbnail-img">
+											<img src="img/portfolio/work-1.jpg" alt="Александр Прокопский">
+										</div>
+
+									</li>
+									<li class="portfolio-item">
+										<div class="details">
+											<a href="https://moik.github.io/yurdis/" target="_blank">
+												<i class="fa fa-search"></i>
+												<strong>Юрдис</strong>
+												<span>Training Project</span>
+											</a>
+										</div>
+										<div class="thumbnail-img">
+											<img src="img/portfolio/work-2.jpg" alt="Юрдис">
+										</div>
+
+									</li>
+									<li class="portfolio-item">
+										<div class="details">
+											<a href="https://moik.github.io/armata/" target="_blank">
+												<i class="fa fa-search"></i>
+												<strong>Armata Group</strong>
+												<span>Landing Training Project</span>
+											</a>
+										</div>
+										<div class="thumbnail-img">
+											<img src="img/portfolio/work-3.jpg" alt="Armata Group">
+										</div>
+
+									</li>
+									<li class="portfolio-item">
+										<div class="details">
+											<a href="https://moik.github.io/devtipstheme/" target="_blank">
+												<i class="fa fa-search"></i>
+												<strong>Artists Theme</strong>
+												<span>CV Training Project</span>
+											</a>
+										</div>
+										<div class="thumbnail-img">
+											<img src="img/portfolio/work-4.jpg" alt="Artists Theme">
+										</div>
+
+									</li>
+									<li class="portfolio-item">
+										<div class="details">
+											<a href="https://moik.github.io/foiNNI/" target="_blank">
+												<i class="fa fa-search"></i>
+												<strong>foiNNI</strong>
+												<span>Landing Training Project</span>
+											</a>
+										</div>
+										<div class="thumbnail-img">
+											<img src="img/portfolio/work-5.jpg" alt="foiNNI">
+										</div>
+
+									</li>
+									<li class="portfolio-item">
+										<div class="details">
+											<a href="http://moik.github.io/gourmet/" target="_blank">
+												<i class="fa fa-search"></i>
+												<strong>Gourmet</strong>
+												<span>Simple Webpage</span>
+											</a>
+										</div>
+										<div class="thumbnail-img">
+											<img src="img/portfolio/work-6.jpg" alt="Gourmet">
+										</div>
+
+									</li>
+								</ul>
+
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+					</section>
+
+					<section id="contact">
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-title hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h2 class="section-title">Contact</h2>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line section-item">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-mail hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Send Me a Message</h3>
+								<div class="row">
+									<div class="col-md-8">
+										<form id="contact-form" method="post" class="forms" data-form="Bottom Form">
+											<div class="form-group">
+												<input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" required>
+											</div>
+											<div class="form-group">
+												<textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+											</div>
+											<div class="form-group">
+												<input class="btn btn-default form-send" type="submit" value="Send!">
+											</div>
+										</form>
+									</div>
+									<div class="col-md-4 contact-info">
+										<h4>Address</h4>
+										<p>Kharkiv, Ukraine</p>
+										<h4>Phone</h4>
+										<p><a href="tel:+380980443525">+38 (098) 044-35-25</a></p>
+										<h4>Email</h4>
+										<p><a href="mailto:turangr@gmail.com">turangr@gmail.com</a></p>
+										<h4>Skype</h4>
+										<p><a href="skype:citnoh?chat">Citnoh</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+
+						<div class="line blank-line">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-progress hidden-sm hidden-xs"></div>
+							<div class="col-md-9 main-bg"></div>
+						</div>
+
+						<div class="line thanks">
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+							<div class="col-md-2 timeline-point hidden-sm hidden-xs"></div>
+							<div class="col-md-8 main-bg">
+								<h3>Thank You!</h3>
+							</div>
+							<div class="col-md-1 main-bg hidden-sm hidden-xs"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<footer>
+				<p class="quote">“Ideas are the beginning points of all fortunes”</p>
+				<p class="author">Napoleon Hill</p>
+			</footer>
+		</div>
+	</div>
+
+	<div class="form-result modal-wrap" id="contactSuccess">
+		<div class="modal-bg"></div>
+		<div class="modal-content">
+			<h4 class="modal-title"><i class="fa fa-check-circle"></i> Thank You!</h4>
+			<p>Your message has been sent to me.</p>
+		</div>
+	</div>
+
+	<div class="form-result modal-wrap" id="contactError">
+		<div class="modal-bg"></div>
+		<div class="modal-content">
+			<h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+			<p>There was an error sending your message.</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="hidden">
+		<form id="message-form" method="post" class="forms zoom-anim-dialog" data-form="Top Form">
+			<h3>Send Me a Message</h3>
+			<div class="form-group">
+				<input class="form-control" type="text" id="name1" name="name" placeholder="Name" required>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="email" id="email1" name="email" placeholder="Email" required>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" id="subject1" name="subject" placeholder="Subject" required>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" name="message" id="message1" placeholder="Message" required></textarea>
+			</div>
+			<div class="form-group">
+				<input class="btn btn-default form-send" type="submit" value="Send!">
+			</div>
+		</form>
+	</div>
+	
+	<script src="js/libs.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
