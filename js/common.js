@@ -37,7 +37,7 @@ $(function() {
 		speed: 500,
 		infiniteLoop: false,
 		hideControlOnEnd: true,
-		easing: 'easeOutElastic',
+		easing: 'easeInQuad',
 		pager: false,
 		prevText: '<i class="fa fa-chevron-left"></i>',
 		nextText: '<i class="fa fa-chevron-right"></i>'
@@ -73,7 +73,7 @@ $(function() {
 
 $(window).load(function(){
 
-	$('#page-loader').fadeOut(200, function(){});
+	$('#page-loader').fadeOut(200);
 
 	$('.content-wrap').addClass('fadeInUp');
 
